@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcos Müller - Developer</title>
 
+  <link rel="icon" href="favicon.ico">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,6 +28,7 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <header>
     <div class="logo">
       <img src="images/mmuller-logo.png" alt="Logo">
@@ -35,10 +38,10 @@
     </button>
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item">Services<a href="#services" class="nav-link"></a></li>
-        <li class="nav-item"><a href="#about" class="nav-link"></a></li>
-        <li class="nav-item"><a href="#work" class="nav-link"></a></li>
+        <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Que hago</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">Sobre Mi</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">Mis trabajos</a></li>
       </ul>
     </nav>
   </header>
@@ -53,15 +56,17 @@
   </section>
   <!-- Servicios -->
   <section class="services-section" id="services">
-    <h2 class="section-title section-title-services">A que me dedico</h2>
+    <h1 class="section-title section-title-services">A que me dedico</h1>
     <div class="services">
       <div class="service">
-        <h3 class="service-title">Diseño Web (desde 03/2020)</h3>
-        <p>Diseños responsive utilizando las herramientas de desarrollo de HTML, CSS (Bootstrap, Sass), Javascript y
-          React. Actualmente incursionando en el area del Back-End con Python y Php.</p>
+        <h2 class="service-title">Diseño Web (desde 03/2020)</h2>
+        <p>Diseños Front-End responsive utilizando las herramientas de desarrollo de HTML, CSS (Bootstrap, Sass),
+          Javascript y
+          React. Poca expriencia en el area de Back-End, actualmente realizando
+          curso universitario de post-grado en Python.</p>
       </div>
       <div class="service">
-        <h3 class="service-title">Lic. en Kinesiologia y Fisiatria (desde 11/2011)</h3>
+        <h2 class="service-title">Lic. en Kinesiologia y Fisiatria (desde 11/2011)</h2>
         <p>No tiene mucho que ver con el mundo IT pero conforma gran parte de mi experiencia laboral y considero que
           puede ser un aporte atipico sin embargo enriquecedor al equipo de trabajo.</p>
       </div>
@@ -71,34 +76,44 @@
 
   <!-- Sobre mi -->
   <section class="about" id="about">
-    <h2 class="section-title section-title-about">Sobre mi</h2>
-    <p class="section-subtitle section-subtitle-about">
+    <h1 class="section-title section-title-about">Sobre mi</h1>
+    <h3 class="section-subtitle section-subtitle-about">
       Desarrollador y Kinesiologo
-    </p>
+    </h3>
 
     <div class="about-body">
-      <p>Me considero una persona motivada por aprender cosas nuevas, el año 2020 fue un año de cambios para
-        muchos, en mi caso descubri (quizas redescubri seria la palabra mas adecuada) mi pasion por el mundo
-        tecnologico,
-        y
-        lo que comenzo como un hobby termino transformandose en un cambio de vida.</p>
-      <p>"Si en verdad te aprecias, estudia. Bien haras en practicar lo aprendido" (Proverbios 19:8)
+      <p>&nbsp;&nbsp;&nbsp;Tengo 33 años y soy de Entre Rios, Argentina. Siempre me considere una persona con curiosidad
+        y motivacion por
+        aprender cosas nuevas. Si bien siempre senti un gran interes por el mundo de la tecnologia, nunca habia
+        considerado un cambio de profesion, ya
+        que me dedique aproximadamente 10 años a ejercer como kinesiologo, sin embargo, llego el año 2020. Fue un año de
+        cambios para
+        muchos, en mi caso perdi parte del trabajo por lo cual mi tiempo libre aumento y decidi ocupar ese tiempo
+        estudiando algo que me guste (Programacion!).</p>
+      <p>&nbsp;&nbsp;&nbsp;Gracias a Dios, al apoyo de mi novia,
+        familia y de amigos que
+        se dedican a programar (con clases privadas icluidas) y a numerosos cursos y tutoriales online (y a los
+        programadores que los producen), lo que comenzo
+        como un hobby
+        se transformo en un cambio de vida radical.
         Actualmente me encuentro estudiando un curso universitario de postgrado de Python, realizando
         proyectos por mi cuenta y en busqueda de nuevos desafios.</p>
+      <p><cite>"Si en verdad te aprecias, estudia. Bien haras en practicar lo aprendido"</cite> (Proverbios 19:8).</p>
     </div>
 
     <img class="about-img" src="images/mmuller-profile.jpg" alt="marcos-picture">
   </section>
 
   <!-- Mis Estudios -->
-  <h2 class="section-title section-title-timeline">Mis estudios en el area (Certificados)</h2>
+  <h1 class="section-title section-title-timeline">Mis estudios en el area (Certificados)</h1>
   <div class="timeline">
     <div class="timeline-body">
       <div class="timeline-item">
         <div class="timeline-content">
-          <i class="fas fa-star fa-2x"></i>
+          <i class="fas fa-star fa-2x timeline-fa"></i>
           <h3 class="timeline-subtitle">Destacados</h3>
-          <p class="timeline-text">"Conviertete en Desarrollador Web Full-Stack". Itinerario de Aprendizaje.
+          <p class="timeline-text">"Conviertete en Desarrollador Web Full-Stack". Itinerario de
+            Aprendizaje.
             <strong>Linkedin Learning.</strong>
           </p>
           <p class="timeline-text">"Programacion en Python" (Actualmente cursando).
@@ -111,7 +126,7 @@
       <div class="timeline-body">
         <div class="timeline-item">
           <div class="timeline-content">
-            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-html5 fa-2x timeline-fa"></i>
             <h3 class="timeline-subtitle">HTML</h3>
             <p>"Desarrollo web. HTML desde cero. Edición 2020".
               <strong>Udemy.</strong>
@@ -123,7 +138,7 @@
         <div class="timeline-body">
           <div class="timeline-item">
             <div class="timeline-content">
-              <i class="fab fa-css3-alt fa-2x"></i>
+              <i class="fab fa-css3-alt fa-2x timeline-fa"></i>
               <h3 class="timeline-subtitle">CSS</h3>
               <p>"Desarrollo Web. CSS desde cero. Edicion 2020". <strong>Udemy.</strong>
               </p>
@@ -137,7 +152,7 @@
           <div class="timeline-body">
             <div class="timeline-item">
               <div class="timeline-content">
-                <i class="fab fa-js-square fa-2x"></i>
+                <i class="fab fa-js-square fa-2x timeline-fa"></i>
                 <h3 class="timeline-subtitle">JavaScript</h3>
                 <p>"Desarrollo Web. JavaScript desde cero. Edicion 2020". <strong>Udemy.</strong>
                 </p>
@@ -154,7 +169,7 @@
             <div class="timeline-body">
               <div class="timeline-item">
                 <div class="timeline-content">
-                  <i class="fab fa-react fa-2x"></i>
+                  <i class="fab fa-react fa-2x timeline-fa"></i>
                   <h3 class="timeline-subtitle">React</h3>
                   <p>"React JS- Complete Guide for Frontend Web Development [2021]".
                     <strong>Udemy.</strong>
@@ -174,9 +189,9 @@
             </div>
 
             <!-- Mi trabajo -->
-            <h2 class="section-title section-title-work">Mi trabajo</h2>
-            <h3 class="section-subtitle section-subtitle-work">Un vistazo a mis proyectos</h3>
-            <section class="work" id="work">
+            <h1 class="section-title section-title-work" id="work">Mi trabajo</h1>
+            <h2 class="section subtitle section-subtitle-work">Un vistazo a mis proyectos</h2>
+            <section class="work">
               <div class="portfolio-card middle">
                 <div class="card-front">
                   <img src="./images/apartamento.jpg" alt="fake-api-list">
@@ -218,16 +233,29 @@
             </section>
 
             <!-- Footer -->
-            <footer>
-              <a href="mailto:marcosmuller87@gmail.com" class="footer-link">marcosmuller87@gmail.com</a>
+            <footer class="footer">
+              <a href="mailto:marcosmuller87@gmail.com" target="_blank" class="footer-link">marcosmuller87@gmail.com</a>
               <ul class="social-media">
+                <li class="social-media-item">
+                  <a class="social-media-link" href="https://github.com/Marcosmuller87" target="_blank">
+
+                    <i class="fab fa-github fa-2x"></i></a>
+                </li>
                 <li class="social-media-item"><a class="social-media-link"
-                    href="https://www.facebook.com/marcos.muller.906/">Facebook</a></li>
-                <li class="social-media-item"><a class="social-media-link" href=""></a></li>
-                <li class="social-media-item"><a class="social-media-link" href=""></a></li>
-                <li class="social-media-item"><a class="social-media-link" href=""></a></li>
+                    href="https://www.linkedin.com/in/marcos-joel-m%C3%BCller-7443b640" target="_blank"><i
+                      class="fab fa-linkedin fa-2x"></i></a></li>
+                <li class="social-media-item"><a class="social-media-link"
+                    href="https://www.facebook.com/marcos.muller.906/" target="_blank"><i
+                      class="fab fa-facebook fa-2x"></i></a>
+                </li>
+                <li class="social-media-item"><a class="social-media-link"
+                    href="https://www.instagram.com/marcosmuller87/?hl=es" target="_blank"><i
+                      class="fab fa-instagram fa-2x"></i></a>
+                </li>
               </ul>
             </footer>
+
+            <script src="js/index.js"></script>
 </body>
 
 </html>
