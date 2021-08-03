@@ -30,8 +30,23 @@ const skillsLang2 = document.querySelector(".lang-2");
 const skillsLang3 = document.querySelector(".lang-3");
 const skillsSubtitle2 = document.querySelector(".time-subtitle2");
 const skillsOuts1 = document.querySelector(".outs-1");
-const skillsStrLink = document.querySelector(".str-linkedin");
 const skillsOuts2 = document.querySelector(".outs-2");
+const skillsHtml = document.querySelector(".html");
+const skillsCss1 = document.querySelector(".css-1");
+const skillsCss2 = document.querySelector(".css-2");
+const skillsJs1 = document.querySelector(".js-1");
+const skillsJs2 = document.querySelector(".js-2");
+const skillsJs3 = document.querySelector(".js-3");
+const skillsReact1 = document.querySelector(".react-1");
+const skillsReact2 = document.querySelector(".react-2");
+const skillsReact3 = document.querySelector(".react-3");
+const skillsReact4 = document.querySelector(".react-4");
+// Work
+const workTitle = document.querySelector(".section-title-work");
+const workSubtitle = document.querySelector(".section-subtitle-work");
+const workCardTitle1 = document.querySelector(".rental-title");
+const workCardBody1 = document.querySelector(".rental-body");
+const workCardBody2 = document.querySelector(".fakeapi-body");
 
 linkLang.forEach((lang) => {
   lang.addEventListener("click", () => {
@@ -70,7 +85,22 @@ linkLang.forEach((lang) => {
     skillsSubtitle2.textContent = skills[attr].subtitle2;
     skillsOuts1.textContent = skills[attr].outs1;
     skillsOuts2.textContent = skills[attr].outs2;
-    skillsStrLink.textContent = skills[attr].str1;
+    skillsHtml.textContent = skills[attr].html;
+    skillsCss1.textContent = skills[attr].css1;
+    skillsCss2.textContent = skills[attr].css2;
+    skillsJs1.textContent = skills[attr].js1;
+    skillsJs2.textContent = skills[attr].js2;
+    skillsJs3.textContent = skills[attr].js3;
+    skillsReact1.textContent = skills[attr].react1;
+    skillsReact2.textContent = skills[attr].react2;
+    skillsReact3.textContent = skills[attr].react3;
+    skillsReact4.textContent = skills[attr].react4;
+    // Work
+    workTitle.textContent = work[attr].title;
+    workSubtitle.textContent = work[attr].subtitle;
+    workCardTitle1.textContent = work[attr].cardtitle1;
+    workCardBody1.textContent = work[attr].cardbody1;
+    workCardBody2.textContent = work[attr].cardbody2;
   });
 });
 
@@ -200,7 +230,20 @@ var skills = {
     outs1:
       '"Conviertete en Desarrollador Web Full-Stack". Itinerario de Aprendizaje. - Linkedin Learning',
     outs2:
-      '"Programación en Python" (Actualmente cursando). - Universidad Nacional de San Martin (UNSAM)',
+      '"Programación en Python". (Actualmente cursando). - Universidad Nacional de San Martín (UNSAM)',
+    html: '"Desarrollo web. HTML desde cero. Edición 2020". (Udemy)',
+    css1: '"Desarrollo Web. CSS desde cero. Edicion 2020". (Udemy)',
+    css2: '"Aprende Bootstrap - Para Principiantes". (Udemy)',
+    js1: '"Desarrollo Web. JavaScript desde cero. Edicion 2020". (Udemy)',
+    js2: '"JavaScript Moderno para React Js - ES6". (Udemy)',
+    js3: '"Aprende JavaScript y Jquery de 0 a 100". (Udemy)',
+    react1:
+      '"React JS- Guia completa para el Desarrollo Web Frontend [2021]". (Udemy)',
+    react2:
+      '"React - La Guia Completa con React Hook Redux 2021 en 4hr". (Udemy)',
+    react3: '"Curso Completo de ReactJs - Basico a Avanzado (2021)". (Udemy)',
+    react4:
+      '"React para principiantes: Consturye un juego mientras aprendes React". (Udemy)',
   },
   english: {
     title: "My Skills",
@@ -210,10 +253,22 @@ var skills = {
     lang3: "Portuguese - Advanced-Intermediate Level",
     subtitle2: "Outstandings",
     outs1:
-      '"Become a Full-Stack Web Developer". Learning Track. - Linkedin Learning',
-    str1: "Linkedin Learning",
+      '"Become a Full-Stack Web Developer". Learning Track. (LinkedIn Learning)',
     outs2:
-      '"Python Programming" (In course). - Universidad Nacional de San Martin (UNSAM)',
+      '"Python Programming". (In course). UNSAM (Universidad Nacional de San Martín) ',
+    html: '"Web Development. HTML from Scratch. 2020 Edition". (Udemy)',
+    css1: '"Web Development. CSS from Scratch. 2020 Edition". (Udemy)',
+    css2: '"Learn Bootstrap - For Beginners". (Udemy)',
+    js1: '"Web Development. JavaScript from scratch. 2020 Edition". (Udemy)',
+    js2: '"Modern JavaScript for React Js - ES6". (Udemy)',
+    js3: '"Learn JavaScript and Jquery from 0 to 100". (Udemy)',
+    react1:
+      '"React JS- Complete Guide for Frontend Web Development [2021]". (Udemy)',
+    react2:
+      '"React - The Complete Guide with React Hook Redux 2021 in 4hr". (Udemy)',
+    react3:
+      '"The Complete ReactJs Course - Basics to Advanced (2021)". (Udemy)',
+    react4: '"React for beginners: Build a game while learning React". (Udemy)',
   },
   portuguese: {
     title: "Minhas Habilidades",
@@ -223,8 +278,53 @@ var skills = {
     lang3: "Português - Nível Intermediário-Avançado",
     subtitle2: "Destacados",
     outs1:
-      '"Conviertete en Desarrollador Web Full-Stack". Itinerario de Aprendizaje. - Linkedin Learning',
+      '"Torne-se um Desenvolvedor Web Full-Stack". Itinerário de Aprendizagem. (Linkedin Learning)',
     outs2:
-      '"Programación en Python" (Actualmente cursando). - Universidad Nacional de San Martin (UNSAM)',
+      '"Programação Python". (Atualmente na cursada). UNSAM (Universidad Nacional de San Martín)',
+    html: '"Desenvolvimento Web. HTML do zero. Edição 2020". (Udemy)',
+    css1: '"Desenvolvimento Web. CSS do zero. Edição 2020". (Udemy)',
+    css2: '"Aprenda Bootstrap - Para Iniciantes". (Udemy)',
+    js1: '"Desenvolvimento Web. JavaScript do zero. Edição 2020". (Udemy)',
+    js2: '"JavaScript Moderno para React Js - ES6". (Udemy)',
+    js3: '"Aprenda JavaScript e Jquery de 0 a 100". (Udemy)',
+    react1:
+      '"React JS - Guia Completo para Desenvolvimento Web Frontend [2021]". (Udemy)',
+    react2: '"React - Guia completo do React Hook Redux 2021 em 4 hs". (Udemy)',
+    react3:
+      '"Curso do ReactJs Completo - Do Básico ao Avançado (2021)". (Udemy)',
+    react4:
+      '"React para iniciantes: construa um jogo enquanto aprende React". (Udemy)',
+  },
+};
+
+// Work
+
+var work = {
+  spanish: {
+    title: "Mi trabajo",
+    subtitle: "Un vistazo a mis proyectos",
+    cardtitle1: "Webpage de Alquiler",
+    cardbody1:
+      "Desarrollada con CSS (Bootstrap) y React Js, Pagina simple de caracter informativo, sobre un departamento de alquiler.",
+    cardbody2:
+      "Aplicación desarrollada con CSS y React Js, modelo para aplicar con base de datos real.",
+  },
+  english: {
+    title: "My Work",
+    subtitle: "A look at my projects",
+    cardtitle1: "Rental Webpage",
+    cardbody1:
+      "Developed with CSS (Bootstrap) and React Js, Simple page of informative character, about a rental apartment.",
+    cardbody2:
+      "Application developed with CSS and React Js, model to apply with a real database.",
+  },
+  portuguese: {
+    title: "O Meu Trabalho",
+    subtitle: "Uma olhada em meus projetos",
+    cardtitle1: "Webpage de Alugel",
+    cardbody1:
+      "Desenvolvido com CSS (Bootstrap) e React Js, página simples de caráter informativo, sobre um departamento de alugel.",
+    cardbody2:
+      "Aplicativo desenvolvido com CSS e React Js, modelo para aplicação com banco de dados real.",
   },
 };
