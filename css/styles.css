@@ -14,7 +14,10 @@
   --clr-primary: #e3e6da;
   --clr-secondary: #222221;
   --clr-accent: #a88f3c;
-  --clr-topbot: #4d4d4a;
+  --clr-bg1: #ffe2cd;
+  --clr-bg2: #d5f4ff;
+  --clr-bg3: #ffe0af;
+  --clr-bg4: #b3fdec;
 
   --fs-h1: 3rem;
   --fs-h2: 2.2rem;
@@ -37,7 +40,10 @@
 .dark-theme {
   --clr-primary: #222221;
   --clr-secondary: #e3e6da;
-  --clr-topbot: #b5b6b3;
+  --clr-bg1: #27231f;
+  --clr-bg2: #002d3d;
+  --clr-bg3: #2e1c00;
+  --clr-bg4: #023f31;
 }
 
 /* General */
@@ -47,12 +53,31 @@ html {
 }
 
 body {
-  background: var(--clr-primary);
-  color: var(--clr-secondary);
+  background: linear-gradient(
+    -45deg,
+    var(--clr-bg1),
+    var(--clr-bg2),
+    var(--clr-bg3),
+    var(--clr-bg4)
+  );
+  background-size: 400% 400%;
+  animation: gradient 10000ms ease infinite;
   margin: 0;
   font-size: var(--fs-body);
   line-height: 1.5;
   cursor: default;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 img {
@@ -116,14 +141,6 @@ h3 {
   line-height: 1.5;
 }
 
-.section-title-intro {
-  font-weight: var(--fs-reg);
-}
-
-.section-title-intro > strong {
-  display: block;
-}
-
 .section-subtitle {
   margin: 0;
   font-size: var(--fs-h2);
@@ -136,19 +153,16 @@ h3 {
   padding: 0.3em 1em;
 }
 
-.section-subtitle-intro {
-  color: var(--clr-primary);
-  font-weight: var(--fw-bold);
-  font-size: 2rem;
-}
-
 /* Header */
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 0.5em;
-  background-color: var(--clr-topbot);
+  background-image: url(../images/navbar.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: var(--clr-secondary);
 }
 
 .logo {
@@ -220,8 +234,11 @@ header {
 
 nav {
   position: fixed;
-  background-color: var(--clr-topbot);
-  color: var(--clr-primary);
+  background-image: url(../images/navbar.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
   top: 0;
   bottom: 0;
   left: 0;
@@ -329,11 +346,22 @@ nav {
   padding-top: 0;
 }
 
+.section-title-intro {
+  font-weight: var(--fs-reg);
+  color: var(--clr-secondary);
+}
+
+.section-title-intro > strong {
+  display: block;
+}
 .section-title-text {
   margin-bottom: 0;
 }
 
 .section-subtitle-intro {
+  color: var(--clr-primary);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
   border-radius: 20px;
 }
 
@@ -373,13 +401,15 @@ nav {
 
 /* Experience */
 
-.experience-section {
+.experience {
   background-color: var(--clr-primary);
   color: var(--clr-secondary);
   background-image: url(../images/laptop.jpg);
   background-size: cover;
   background-blend-mode: soft-light;
   text-align: center;
+  position: relative;
+  padding-top: 0;
 }
 
 .section-title-experience {
@@ -401,7 +431,7 @@ nav {
   margin-bottom: 4em;
 }
 
-.experience {
+.experience-body {
   max-width: 500px;
   margin: 0 auto 3.5em;
 }
@@ -435,10 +465,18 @@ nav {
   text-indent: 20px;
 }
 
+.section-title-about {
+  color: var(--clr-secondary);
+}
+
 .section-subtitle-about {
   color: var(--clr-primary);
   font-weight: var(--fw-bold);
   border-radius: 20px;
+}
+
+.about-body {
+  color: var(--clr-secondary);
 }
 
 .about-img {
@@ -465,9 +503,8 @@ nav {
     grid-row: 2;
     position: relative;
     left: 0.5em;
-    width: 100%;
     padding-left: 1em;
-    padding-right: calc(200px + 4em);
+    padding-right: calc(100px + 4em);
   }
 
   .about-img {
@@ -497,7 +534,8 @@ nav {
 
 .skills-body {
   position: relative;
-  margin-left: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
   border-radius: 0 7px 7px 0;
   padding: 4px 0;
 }
@@ -513,7 +551,9 @@ nav {
 }
 
 .skills-content {
+  padding-right: 1em;
   margin-bottom: 80px;
+  color: var(--clr-secondary);
 }
 
 .skills-item {
@@ -559,8 +599,8 @@ nav {
 }
 
 .fa-star {
-  top: 9px;
-  left: -6px;
+  top: 8px;
+  left: -5px;
 }
 
 .fa-react {
@@ -579,6 +619,10 @@ nav {
 }
 
 @media (min-width: 768px) {
+  .skills-body {
+    margin-left: 3em;
+  }
+
   .skills-item::after {
     width: 80px;
     height: 80px;
@@ -620,12 +664,6 @@ nav {
   grid-template-columns: minmax(200px, 1fr);
 }
 
-@media (min-width: 1100px) {
-  .work {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .section-title-work {
   color: var(--clr-accent);
   position: relative;
@@ -645,7 +683,7 @@ nav {
 .section-subtitle-work {
   color: var(--clr-secondary);
   font-weight: var(--fw-bold);
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -657,16 +695,16 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-.portfolio-card {
-  height: 515px;
-  width: 462px;
+.card {
+  height: 365px;
+  width: 322px;
 }
 
-.portfolio-card:hover > .card-front {
+.card:hover > .card-front {
   transform: perspective(600px) rotateY(-180deg);
 }
 
-.portfolio-card:hover > .card-back {
+.card:hover > .card-back {
   transform: perspective(600px) rotateY(0deg);
 }
 
@@ -703,14 +741,22 @@ nav {
   padding: 0.5rem;
 }
 
+.card-title,
+.card-body {
+  justify-self: center;
+  align-self: center;
+}
+
 .card-links {
-  margin: 20px;
-  position: relative;
-  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card-links a {
-  margin: 6rem 1rem 0.1rem;
+  font-size: 0.7rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
   color: var(--clr-primary);
   transition: 400ms;
   outline: none;
@@ -720,11 +766,31 @@ nav {
   background: var(--clr-primary);
   color: var(--clr-accent);
 }
+@media (min-width: 600px) {
+  .card {
+    height: 465px;
+    width: 412px;
+  }
+  .card-links a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .work {
+    grid-template-columns: 1fr 1fr;
+  }
+  .portfolio-card {
+    padding-left: 50%;
+  }
+}
 
 /* Footer */
 
 .footer {
-  background: var(--clr-topbot);
+  background-image: url(../images/navbar.jpg);
+  background-color: var(--clr-secondary);
+  background-size: cover;
+  background-blend-mode: soft-light;
   color: var(--clr-accent);
   text-align: center;
   padding: 1em 0;
@@ -755,7 +821,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 1em 0 0;
   padding: 0;
 }
 

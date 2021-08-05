@@ -6,6 +6,7 @@ const navExp = document.querySelector(".nav-exp");
 const navAbout = document.querySelector(".nav-about");
 const navSkills = document.querySelector(".nav-skills");
 const navWork = document.querySelector(".nav-work");
+const navContact = document.querySelector(".nav-contact");
 // Intro
 const introTitle = document.querySelector(".section-title-text");
 const introSubtitle = document.querySelector(".section-subtitle-intro");
@@ -47,6 +48,8 @@ const workSubtitle = document.querySelector(".section-subtitle-work");
 const workCardTitle1 = document.querySelector(".rental-title");
 const workCardBody1 = document.querySelector(".rental-body");
 const workCardBody2 = document.querySelector(".fakeapi-body");
+const workCardTitle3 = document.querySelector(".portfolio-title");
+const workCardBody3 = document.querySelector(".portfolio-body");
 
 linkLang.forEach((lang) => {
   lang.addEventListener("click", () => {
@@ -60,6 +63,7 @@ linkLang.forEach((lang) => {
     navAbout.textContent = nav[attr].about;
     navSkills.textContent = nav[attr].skills;
     navWork.textContent = nav[attr].work;
+    navContact.textContent = nav[attr].contact;
     // Intro
     introTitle.textContent = intro[attr].title;
     introSubtitle.textContent = intro[attr].subtitle;
@@ -101,6 +105,8 @@ linkLang.forEach((lang) => {
     workCardTitle1.textContent = work[attr].cardtitle1;
     workCardBody1.textContent = work[attr].cardbody1;
     workCardBody2.textContent = work[attr].cardbody2;
+    workCardTitle3.textContent = work[attr].cardtitle3;
+    workCardBody3.textContent = work[attr].cardbody3;
   });
 });
 
@@ -113,6 +119,7 @@ var nav = {
     about: "Sobre mi",
     skills: "Habilidades",
     work: "Mi trabajo",
+    contact: "Contacto",
   },
   english: {
     home: "Home",
@@ -120,6 +127,7 @@ var nav = {
     about: "About me",
     skills: "My Skills",
     work: "My Work",
+    contact: "Contact",
   },
   portuguese: {
     home: "Começo",
@@ -127,6 +135,7 @@ var nav = {
     about: "Sobre mim",
     skills: "Habilidades",
     work: "Meu trabalho",
+    contact: "Contato",
   },
 };
 
@@ -308,6 +317,9 @@ var work = {
       "Desarrollada con CSS (Bootstrap) y React Js, Pagina simple de caracter informativo, sobre un departamento de alquiler.",
     cardbody2:
       "Aplicación desarrollada con CSS y React Js, modelo para aplicar con base de datos real.",
+    cardtitle3: "Portfolio Personal",
+    cardbody3:
+      "Proyecto SPA (Single Page Aplication) desarrollado con CSS y JavaScript.",
   },
   english: {
     title: "My Work",
@@ -317,6 +329,9 @@ var work = {
       "Developed with CSS (Bootstrap) and React Js, Simple page of informative character, about a rental apartment.",
     cardbody2:
       "Application developed with CSS and React Js, model to apply with a real database.",
+    cardtitle3: "Personal Portfolio",
+    cardbody3:
+      "SPA (Single Page Aplication) project developed with CSS and JavaScript.",
   },
   portuguese: {
     title: "O Meu Trabalho",
@@ -326,5 +341,8 @@ var work = {
       "Desenvolvido com CSS (Bootstrap) e React Js, página simples de caráter informativo, sobre um departamento de alugel.",
     cardbody2:
       "Aplicativo desenvolvido com CSS e React Js, modelo para aplicação com banco de dados real.",
+    cardtitle3: "Portfólio Pessoal",
+    cardbody3:
+      "Projeto SPA (Single Page Application) desenvolvido em CSS e JavaScript.",
   },
 };

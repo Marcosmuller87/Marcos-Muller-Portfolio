@@ -30,8 +30,8 @@
 <body>
   <!-- Navbar -->
   <header>
-    <div class="logo">
-      <img src="images/mmuller-logo.png" alt="Logo">
+    <div>
+      <img src="images/mmuller-logo.png" alt="Logo" class="logo">
     </div>
     <div class="lang-container">
       <a href="#" language='spanish' class="lang-link active"><img src="images/espana.png" class="flag" alt="flag"></a>
@@ -48,6 +48,7 @@
         <li class="nav-item"><a href="#about" class="nav-link nav-about">Sobre Mi</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link nav-skills">Habilidades</a></li>
         <li class="nav-item"><a href="#work" class="nav-link nav-work">Mi trabajo</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link nav-contact">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -64,10 +65,10 @@
     <img src="images/mmuller-profile.JPG" alt="profile-img" class="intro-img">
   </section>
   <!-- Experience -->
-  <section class="experience-section" id="experience">
+  <section class="experience" id="experience">
     <h1 class="section-title section-title-experience">Experiencia laboral</h1>
     <div class="experience-wrapper">
-      <div class="experience">
+      <div class="experience-body">
         <h2 class="experience-sub1">Diseño Web (desde 03/2020)</h2>
         <p class="experience-text1">Diseños Front-End responsive utilizando las herramientas de desarrollo de HTML, CSS
           (Bootstrap, Sass),
@@ -75,7 +76,7 @@
           React. Poca expriencia en el área de Back-End, actualmente realizando
           curso universitario de post-grado en Python.</p>
       </div>
-      <div class="experience">
+      <div class="experience-body">
         <h2 class="experience-sub2">Lic. en Kinesiología y Fisiatría (desde 11/2011)</h2>
         <p class="experience-text2">No tiene mucho que ver con el mundo IT pero conforma gran parte de mi experiencia
           laboral y considero que
@@ -117,104 +118,105 @@
   </section>
 
   <!-- My Skills -->
-  <h1 class="section-title section-title-skills" id="skills">Mis habilidades</h1>
-  <div class="skills-body">
-    <div class="skills-item">
-      <div class="skills-content">
-        <i class="fas fa-language fa-2x skills-fa"></i>
-        <h3 class="time-subtitle1">Idiomas</h3>
-        <p class="skills-text lang-1">
-          Español - Idioma Nativo.
-        </p>
-        <p class="skills-text lang-2">
-          Inglés - Nivel Intermedio-Avanzado.
-        </p>
-        <p class="skills-text lang-3">
-          Portugués - Nivel Intermedio-Avanzado.
-        </p>
+  <section class="skills">
+    <h1 class="section-title section-title-skills" id="skills">Mis habilidades</h1>
+    <div class="skills-body">
+      <div class="skills-item">
+        <div class="skills-content">
+          <i class="fas fa-language fa-2x skills-fa"></i>
+          <h3 class="time-subtitle1">Idiomas</h3>
+          <p class="skills-text lang-1">
+            Español - Idioma Nativo.
+          </p>
+          <p class="skills-text lang-2">
+            Inglés - Nivel Intermedio-Avanzado.
+          </p>
+          <p class="skills-text lang-3">
+            Portugués - Nivel Intermedio-Avanzado.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="skills-body">
-    <div class="skills-item">
-      <div class="skills-content">
-        <i class="fas fa-star fa-2x skills-fa"></i>
-        <h3 class="skills-subtitle time-subtitle2">Destacados</h3>
-        <p class="skills-text outs-1">"Conviertete en Desarrollador Web Full-Stack". Itinerario de
-          Aprendizaje. (LinkedIn Learning)</p>
-        <p class="skills-text outs-2">"Programación en Python". (Actualmente cursando). UNSAM (Universidad Nacional
-          de San Martín).</p>
+    <div class="skills-body">
+      <div class="skills-item">
+        <div class="skills-content">
+          <i class="fas fa-star fa-2x skills-fa"></i>
+          <h3 class="skills-subtitle time-subtitle2">Destacados</h3>
+          <p class="skills-text outs-1">"Conviertete en Desarrollador Web Full-Stack". Itinerario de
+            Aprendizaje. (LinkedIn Learning)</p>
+          <p class="skills-text outs-2">"Programación en Python". (Actualmente cursando). UNSAM (Universidad Nacional
+            de San Martín).</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="skills-body">
-    <div class="skills-item">
-      <div class="skills-content">
-        <i class="fab fa-html5 fa-2x skills-fa"></i>
-        <h3 class="skills-subtitle">HTML</h3>
-        <p class="skills-text html">"Desarrollo web. HTML desde cero. Edición 2020".
-          (Udemy)
-        </p>
+    <div class="skills-body">
+      <div class="skills-item">
+        <div class="skills-content">
+          <i class="fab fa-html5 fa-2x skills-fa"></i>
+          <h3 class="skills-subtitle">HTML</h3>
+          <p class="skills-text html">"Desarrollo web. HTML desde cero. Edición 2020".
+            (Udemy)
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="skills-body">
-    <div class="skills-item">
-      <div class="skills-content">
-        <i class="fab fa-css3-alt fa-2x skills-fa"></i>
-        <h3 class="skills-subtitle">CSS</h3>
-        <p class="skills-text css-1">"Desarrollo Web. CSS desde cero. Edicion 2020". (Udemy)
-        </p>
-        <p class="skills-text css-2">
-          "Aprende Bootstrap - Para Principiantes". (Udemy)
-        </p>
+    <div class="skills-body">
+      <div class="skills-item">
+        <div class="skills-content">
+          <i class="fab fa-css3-alt fa-2x skills-fa"></i>
+          <h3 class="skills-subtitle">CSS</h3>
+          <p class="skills-text css-1">"Desarrollo Web. CSS desde cero. Edicion 2020". (Udemy)
+          </p>
+          <p class="skills-text css-2">
+            "Aprende Bootstrap - Para Principiantes". (Udemy)
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="skills-body">
-    <div class="skills-item">
-      <div class="skills-content">
-        <i class="fab fa-js-square fa-2x skills-fa"></i>
-        <h3 class="skills-subtitle">JavaScript</h3>
-        <p class="skills-text js-1">"Desarrollo Web. JavaScript desde cero. Edicion 2020". (Udemy)
-        </p>
-        <p class="skills-text js-2">
-          "JavaScript Moderno para React Js - ES6". (Udemy)
-        </p>
-        <p class="skills-text js-3">
-          "Aprende JavaScript y Jquery de 0 a 100". (Udemy)
-        </p>
+    <div class="skills-body">
+      <div class="skills-item">
+        <div class="skills-content">
+          <i class="fab fa-js-square fa-2x skills-fa"></i>
+          <h3 class="skills-subtitle">JavaScript</h3>
+          <p class="skills-text js-1">"Desarrollo Web. JavaScript desde cero. Edicion 2020". (Udemy)
+          </p>
+          <p class="skills-text js-2">
+            "JavaScript Moderno para React Js - ES6". (Udemy)
+          </p>
+          <p class="skills-text js-3">
+            "Aprende JavaScript y Jquery de 0 a 100". (Udemy)
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="skills-body">
-    <div class="skills-item">
-      <div class="skills-content">
-        <i class="fab fa-react fa-2x skills-fa"></i>
-        <h3 class="skills-subtitle">React</h3>
-        <p class="skills-text react-1">"React JS- Guia completa para el Desarrollo Web Frontend [2021]".
-          (Udemy)
-        </p>
-        <p class="skills-text react-2">
-          "React - La Guia Completa con React Hook Redux 2021 en 4hr". (Udemy)
-        </p>
-        <p class="skills-text react-3">
-          "Curso Completo de ReactJs - Basico a Avanzado (2021)". (Udemy)
-        </p>
-        <p class="skills-text react-4">
-          "React para principiantes: Consturye un juego mientras aprendes React". (Udemy)
-        </p>
+    <div class="skills-body">
+      <div class="skills-item">
+        <div class="skills-content">
+          <i class="fab fa-react fa-2x skills-fa"></i>
+          <h3 class="skills-subtitle">React</h3>
+          <p class="skills-text react-1">"React JS- Guia completa para el Desarrollo Web Frontend [2021]".
+            (Udemy)
+          </p>
+          <p class="skills-text react-2">
+            "React - La Guia Completa con React Hook Redux 2021 en 4hr". (Udemy)
+          </p>
+          <p class="skills-text react-3">
+            "Curso Completo de ReactJs - Basico a Avanzado (2021)". (Udemy)
+          </p>
+          <p class="skills-text react-4">
+            "React para principiantes: Consturye un juego mientras aprendes React". (Udemy)
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-
+  </section>
   <!-- Mi trabajo -->
   <h1 class="section-title section-title-work" id="work">Mi trabajo</h1>
   <h2 class="section subtitle section-subtitle-work">Un vistazo a mis proyectos</h2>
   <section class="work">
-    <div class="portfolio-card middle">
+    <div class="card middle">
       <div class="card-front">
-        <img src="./images/apartamento.jpg" alt="fake-api-list">
+        <img src="./images/apartament.jpg" alt="apartament-img">
       </div>
       <div class="card-back">
         <div class="back-content middle">
@@ -230,7 +232,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-card middle">
+    <div class="card middle">
       <div class="card-front">
         <img src="./images/lista.jpg" alt="fake-api-list">
       </div>
@@ -249,10 +251,27 @@
         </div>
       </div>
     </div>
+    <div class="card middle portfolio-card">
+      <div class="card-front">
+        <img src="./images/portfolio.jpg" alt="portfolio-img">
+      </div>
+      <div class="card-back">
+        <div class="back-content middle">
+          <h3 class="card-title portfolio-title">Portfolio Personal</h3>
+          <p class="card-body portfolio-body">Proyecto SPA (Single Page Aplication) desarrollado con CSS y JavaScript.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/Marcosmuller87/Fake-Api-List" target="_blank" class="btn card-btn">
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <a href="mailto:marcosmuller87@gmail.com" target="_blank" class="footer-link">marcosmuller87@gmail.com</a>
     <ul class="social-media">
       <li class="social-media-item">
@@ -275,6 +294,7 @@
   <script src="js/index.js"></script>
   <script src="js/laguages.js"></script>
   <script src="js/darktheme.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>
