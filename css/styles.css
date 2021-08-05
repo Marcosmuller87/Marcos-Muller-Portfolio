@@ -779,9 +779,6 @@ nav {
   .work {
     grid-template-columns: 1fr 1fr;
   }
-  .portfolio-card {
-    padding-left: 50%;
-  }
 }
 
 /* Footer */

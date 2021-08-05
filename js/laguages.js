@@ -50,6 +50,8 @@ const workCardBody1 = document.querySelector(".rental-body");
 const workCardBody2 = document.querySelector(".fakeapi-body");
 const workCardTitle3 = document.querySelector(".portfolio-title");
 const workCardBody3 = document.querySelector(".portfolio-body");
+const workCardTitle4 = document.querySelector(".construction-title");
+const workCardBody4 = document.querySelector(".construction-body");
 
 linkLang.forEach((lang) => {
   lang.addEventListener("click", () => {
@@ -107,6 +109,8 @@ linkLang.forEach((lang) => {
     workCardBody2.textContent = work[attr].cardbody2;
     workCardTitle3.textContent = work[attr].cardtitle3;
     workCardBody3.textContent = work[attr].cardbody3;
+    workCardTitle4.textContent = work[attr].cardtitle4;
+    workCardBody4.textContent = work[attr].cardbody4;
   });
 });
 
@@ -320,6 +324,8 @@ var work = {
     cardtitle3: "Portfolio Personal",
     cardbody3:
       "Proyecto SPA (Single Page Aplication) desarrollado con CSS y JavaScript.",
+    cardtitle4: "Proximamente!",
+    cardbody4: "Proyecto de E-Commerce con React y Bootstrap en construccion.",
   },
   english: {
     title: "My Work",
@@ -332,6 +338,9 @@ var work = {
     cardtitle3: "Personal Portfolio",
     cardbody3:
       "SPA (Single Page Aplication) project developed with CSS and JavaScript.",
+    cardtitle4: "Coming Soon!",
+    cardbody4:
+      "E-Commerce project with React and Bootstrap under construction.",
   },
   portuguese: {
     title: "O Meu Trabalho",
@@ -344,5 +353,7 @@ var work = {
     cardtitle3: "Portfólio Pessoal",
     cardbody3:
       "Projeto SPA (Single Page Application) desenvolvido em CSS e JavaScript.",
+    cardtitle4: "Em Breve!",
+    cardbody4: "Projeto de E-Commerce com React e Bootstrap em construção.",
   },
 };
