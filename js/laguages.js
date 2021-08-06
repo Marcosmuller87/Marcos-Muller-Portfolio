@@ -360,7 +360,7 @@ var work = {
   },
   portuguese: {
     title: "O Meu Trabalho",
-    subtitle: "Uma olhada em meus projetos",
+    subtitle: "Uma olhada nos meus projetos",
     cardtitle1: "Webpage de Alugel",
     cardbody1:
       "Desenvolvido com CSS (Bootstrap) e React Js, página simples de caráter informativo, sobre um departamento de alugel.",
