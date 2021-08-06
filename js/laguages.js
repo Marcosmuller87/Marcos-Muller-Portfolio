@@ -1,28 +1,37 @@
+// Constantes de idiomas
+
 const contLang = document.querySelector(".lang-container");
 const linkLang = document.querySelectorAll(".lang-link");
-// Nav Consts
+
+// Elementos a modificar:
+
+// Navbar
 const navHome = document.querySelector(".nav-home");
 const navExp = document.querySelector(".nav-exp");
 const navAbout = document.querySelector(".nav-about");
 const navSkills = document.querySelector(".nav-skills");
 const navWork = document.querySelector(".nav-work");
 const navContact = document.querySelector(".nav-contact");
+
 // Intro
 const introTitle = document.querySelector(".section-title-text");
 const introSubtitle = document.querySelector(".section-subtitle-intro");
-// Experience
+
+// Experiencia
 const expTitle = document.querySelector(".section-title-experience");
 const expSubtitle1 = document.querySelector(".experience-sub1");
 const expSubtitle2 = document.querySelector(".experience-sub2");
 const expText1 = document.querySelector(".experience-text1");
 const expText2 = document.querySelector(".experience-text2");
 const expBtn = document.querySelector(".experience-btn");
-// About
+
+// Sobre Mi
 const aboutTitle = document.querySelector(".section-title-about");
 const aboutSubtitle = document.querySelector(".section-subtitle-about");
 const aboutText1 = document.querySelector(".about-text1");
 const aboutText2 = document.querySelector(".about-text2");
 const aboutText3 = document.querySelector(".about-text3");
+
 // Skills
 const skillsTitle = document.querySelector(".section-title-skills");
 const skillsSubtitle1 = document.querySelector(".time-subtitle1");
@@ -42,7 +51,8 @@ const skillsReact1 = document.querySelector(".react-1");
 const skillsReact2 = document.querySelector(".react-2");
 const skillsReact3 = document.querySelector(".react-3");
 const skillsReact4 = document.querySelector(".react-4");
-// Work
+
+// Mi trabajo
 const workTitle = document.querySelector(".section-title-work");
 const workSubtitle = document.querySelector(".section-subtitle-work");
 const workCardTitle1 = document.querySelector(".rental-title");
@@ -53,12 +63,17 @@ const workCardBody3 = document.querySelector(".portfolio-body");
 const workCardTitle4 = document.querySelector(".construction-title");
 const workCardBody4 = document.querySelector(".construction-body");
 
+// Funcion para renderizar el idioma por medio de classList remove y add
+
 linkLang.forEach((lang) => {
   lang.addEventListener("click", () => {
     contLang.querySelector(".active").classList.remove("active");
     lang.classList.add("active");
 
     const attr = lang.getAttribute("language");
+
+    // Modificacion del DOM utilizando los values de las variables en formato JSON
+
     // Navbar
     navHome.textContent = nav[attr].home;
     navExp.textContent = nav[attr].experience;
@@ -66,9 +81,11 @@ linkLang.forEach((lang) => {
     navSkills.textContent = nav[attr].skills;
     navWork.textContent = nav[attr].work;
     navContact.textContent = nav[attr].contact;
+
     // Intro
     introTitle.textContent = intro[attr].title;
     introSubtitle.textContent = intro[attr].subtitle;
+
     // Experience
     expTitle.textContent = experience[attr].title;
     expSubtitle1.textContent = experience[attr].subtitle1;
@@ -76,12 +93,14 @@ linkLang.forEach((lang) => {
     expText1.textContent = experience[attr].text1;
     expText2.textContent = experience[attr].text2;
     expBtn.textContent = experience[attr].expbtn;
+
     // About
     aboutTitle.textContent = about[attr].title;
     aboutSubtitle.textContent = about[attr].subtitle;
     aboutText1.textContent = about[attr].text1;
     aboutText2.textContent = about[attr].text2;
     aboutText3.textContent = about[attr].text3;
+
     // Skills
     skillsTitle.textContent = skills[attr].title;
     skillsSubtitle1.textContent = skills[attr].subtitle1;
@@ -101,6 +120,7 @@ linkLang.forEach((lang) => {
     skillsReact2.textContent = skills[attr].react2;
     skillsReact3.textContent = skills[attr].react3;
     skillsReact4.textContent = skills[attr].react4;
+
     // Work
     workTitle.textContent = work[attr].title;
     workSubtitle.textContent = work[attr].subtitle;
@@ -114,8 +134,9 @@ linkLang.forEach((lang) => {
   });
 });
 
-// Navbar
+// Variables en Formato Json:
 
+// Navbar
 var nav = {
   spanish: {
     home: "Inicio",
@@ -143,8 +164,7 @@ var nav = {
   },
 };
 
-// intro
-
+// Intro
 var intro = {
   spanish: {
     title: "Hola, soy",
@@ -160,8 +180,7 @@ var intro = {
   },
 };
 
-//Experience
-
+//Experiencia
 var experience = {
   spanish: {
     title: "Experiencia Laboral",
@@ -195,8 +214,7 @@ var experience = {
   },
 };
 
-// About
-
+// Sobre mi
 var about = {
   spanish: {
     title: "Sobre mi",
@@ -231,7 +249,6 @@ var about = {
 };
 
 // Skills
-
 var skills = {
   spanish: {
     title: "Mis Habilidades",
@@ -310,8 +327,7 @@ var skills = {
   },
 };
 
-// Work
-
+// Mi Trabajo
 var work = {
   spanish: {
     title: "Mi trabajo",

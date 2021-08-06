@@ -193,7 +193,7 @@ header {
   }
 }
 
-/* Navbar Languages */
+/* Navbar - Idiomas */
 .lang-container {
   display: flex;
   align-items: center;
@@ -231,6 +231,8 @@ header {
     margin-right: 20px;
   }
 }
+
+/* Navbar */
 
 nav {
   position: fixed;
@@ -347,6 +349,7 @@ nav {
 }
 
 .section-title-intro {
+  font-size: var(--fs-h2);
   font-weight: var(--fs-reg);
   color: var(--clr-secondary);
 }
@@ -361,7 +364,7 @@ nav {
 .section-subtitle-intro {
   color: var(--clr-primary);
   font-weight: var(--fw-bold);
-  font-size: 2rem;
+  font-size: var(--fs-h3);
   border-radius: 20px;
 }
 
@@ -388,6 +391,10 @@ nav {
     position: relative;
   }
 
+  .section-title-intro {
+    font-size: var(--fs-h1);
+  }
+
   .section-subtitle-intro {
     align-self: start;
     grid-column: -1 / 1;
@@ -399,7 +406,7 @@ nav {
   }
 }
 
-/* Experience */
+/* Experiencia */
 
 .experience {
   background-color: var(--clr-primary);
@@ -471,6 +478,7 @@ nav {
 
 .section-subtitle-about {
   color: var(--clr-primary);
+  font-size: var(--fs-h3);
   font-weight: var(--fw-bold);
   border-radius: 20px;
 }
@@ -568,14 +576,14 @@ nav {
   border: 4px solid var(--clr-accent);
   border-radius: 50%;
   position: absolute;
-  background: var(--clr-primary);
+  background: inherit;
   left: -12px;
   top: 0px;
   z-index: 9;
 }
 
 .skills-item:hover::after {
-  border: 4px solid var(--clr-primary);
+  border: 4px solid inherit;
   background: var(--clr-secondary);
   transition: all 0.5s ease-in;
 }
@@ -704,7 +712,15 @@ nav {
   transform: perspective(600px) rotateY(-180deg);
 }
 
+.card:focus > .card-front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
 .card:hover > .card-back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card:focus > .card-back {
   transform: perspective(600px) rotateY(0deg);
 }
 
