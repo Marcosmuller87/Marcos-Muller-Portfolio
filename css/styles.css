@@ -170,29 +170,6 @@ header {
   max-height: 80px;
 }
 
-.dark-mode {
-  display: inline-block;
-  padding-top: 10px;
-  padding-left: 20px;
-}
-
-.dark-mode:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.dark-logo {
-  margin-top: 20px;
-  margin-left: 10px;
-  max-height: 30px;
-}
-
-@media (min-width: 768px) {
-  .dark-logo {
-    max-height: 50px;
-  }
-}
-
 /* Navbar - Idiomas */
 .lang-container {
   display: flex;
@@ -341,11 +318,37 @@ nav {
   bottom: 10px;
 }
 
+/* Dark Mode */
+
+.dark-mode {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.dark-mode:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.dark-logo {
+  margin-top: 20px;
+  margin-left: 10px;
+  max-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .dark-logo {
+    max-height: 50px;
+  }
+}
+
 /* Intro */
 
 .intro {
   position: relative;
   padding-top: 0;
+  max-width: 100%;
 }
 
 .section-title-intro {
