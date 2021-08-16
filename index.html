@@ -213,6 +213,9 @@
           <p class="skills-text react-4">
             "React para principiantes: Consturye un juego mientras aprendes React". (Udemy)
           </p>
+          <p class="skills-text react-5">
+            "Aprende React + Firebase | 2021". (Udemy)
+          </p>
         </div>
       </div>
     </div>
@@ -292,10 +295,25 @@
     </div>
   </section>
 
+  <!-- Contact Form -->
+  <section class="form-section" id="contact">
+    <h1 class="section-title section-title-form">Contacto</h1>
+    <div class="form-container">
+      <div class="contact-box"></div>
+      <form action="https://formsubmit.co/marcosmuller87@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo Email!">
+        <input type="text" name="name" class="form-input form-name" placeholder="Nombre Completo" required>
+        <input class="form-input" type="email" name="email" placeholder="Email" required>
+        <textarea class="form-input form-area" type="text" name="name" placeholder="Escribí tu mensaje aqui"
+          required></textarea>
+        <button class="btn btn-form" type="submit">Enviar</button>
+        <input type="hidden" name="_next" value="https://marcosmuller.netlify.app//thanks.html">
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="footer" id="contact">
-    <a href="mailto:marcosmuller87@gmail.com" target="_blank" class="footer-link">marcosmuller87@gmail.com</a>
+  <footer class="footer">
     <ul class="social-media">
       <li class="social-media-item">
         <a class="social-media-link" href="https://github.com/Marcosmuller87" target="_blank">
@@ -316,7 +334,6 @@
   <script src="js/index.js"></script>
   <script src="js/laguages.js"></script>
   <script src="js/darktheme.js"></script>
-  <script src="js/navbar.js"></script>
 </body>
 
 </html>
