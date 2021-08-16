@@ -51,6 +51,7 @@ const skillsReact1 = document.querySelector(".react-1");
 const skillsReact2 = document.querySelector(".react-2");
 const skillsReact3 = document.querySelector(".react-3");
 const skillsReact4 = document.querySelector(".react-4");
+const skillsReact5 = document.querySelector(".react-5");
 
 // Mi trabajo
 const workTitle = document.querySelector(".section-title-work");
@@ -62,6 +63,11 @@ const workCardTitle3 = document.querySelector(".portfolio-title");
 const workCardBody3 = document.querySelector(".portfolio-body");
 const workCardTitle4 = document.querySelector(".construction-title");
 const workCardBody4 = document.querySelector(".construction-body");
+
+//Contacto
+const contTitle = document.querySelector(".section-title-form");
+const contactName = document.querySelector(".form-name");
+const contactBtn = document.querySelector(".btn-form");
 
 // Funcion para renderizar el idioma por medio de classList remove y add
 
@@ -120,6 +126,7 @@ linkLang.forEach((lang) => {
     skillsReact2.textContent = skills[attr].react2;
     skillsReact3.textContent = skills[attr].react3;
     skillsReact4.textContent = skills[attr].react4;
+    skillsReact5.textContent = skills[attr].react5;
 
     // Work
     workTitle.textContent = work[attr].title;
@@ -131,6 +138,11 @@ linkLang.forEach((lang) => {
     workCardBody3.textContent = work[attr].cardbody3;
     workCardTitle4.textContent = work[attr].cardtitle4;
     workCardBody4.textContent = work[attr].cardbody4;
+
+    // Contact
+    contTitle.textContent = contact[attr].title;
+    contactName.textContent.placeholder = contact[attr].name;
+    contactBtn.textContent = contact[attr].button;
   });
 });
 
@@ -274,6 +286,7 @@ var skills = {
     react3: '"Curso Completo de ReactJs - Basico a Avanzado (2021)". (Udemy)',
     react4:
       '"React para principiantes: Consturye un juego mientras aprendes React". (Udemy)',
+    react5: '"Aprende React + Firebase | 2021". (Udemy)',
   },
   english: {
     title: "My Skills",
@@ -299,6 +312,7 @@ var skills = {
     react3:
       '"The Complete ReactJs Course - Basics to Advanced (2021)". (Udemy)',
     react4: '"React for beginners: Build a game while learning React". (Udemy)',
+    react5: '"Learn React + Firebase | 2021". (Udemy)',
   },
   portuguese: {
     title: "Minhas Habilidades",
@@ -324,6 +338,7 @@ var skills = {
       '"Curso do ReactJs Completo - Do Básico ao Avançado (2021)". (Udemy)',
     react4:
       '"React para iniciantes: construa um jogo enquanto aprende React". (Udemy)',
+    react5: '"Aprenda React + Firebase | 2021". (Udemy)',
   },
 };
 
@@ -371,5 +386,27 @@ var work = {
       "Projeto SPA (Single Page Application) desenvolvido em CSS e JavaScript.",
     cardtitle4: "Em Breve!",
     cardbody4: "Projeto de E-Commerce com React e Bootstrap em construção.",
+  },
+};
+
+// Contacto
+var contact = {
+  spanish: {
+    title: "Contacto",
+    name: "Nombre Completo",
+    area: "Escrirbe tu mensaje aqui",
+    button: "Enviar",
+  },
+  english: {
+    title: "Contact",
+    name: "Full Name",
+    area: "Escrirbe tu mensaje aqui",
+    button: "Send",
+  },
+  portuguese: {
+    title: "Contato",
+    name: "Nome Completo",
+    area: "Escrirbe tu mensaje aqui",
+    button: "Enviar",
   },
 };
