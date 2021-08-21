@@ -65,8 +65,9 @@ const workCardTitle4 = document.querySelector(".construction-title");
 const workCardBody4 = document.querySelector(".construction-body");
 
 //Contacto
-const contTitle = document.querySelector(".section-title-form");
-const contactName = document.querySelector(".form-name");
+const contactTitle = document.querySelector(".section-title-form");
+const contactLabel1 = document.querySelector(".label1");
+const contactLabel2 = document.querySelector(".label2");
 const contactBtn = document.querySelector(".btn-form");
 
 // Funcion para renderizar el idioma por medio de classList remove y add
@@ -140,8 +141,8 @@ linkLang.forEach((lang) => {
     workCardBody4.textContent = work[attr].cardbody4;
 
     // Contact
-    contTitle.textContent = contact[attr].title;
-    contactName.textContent.placeholder = contact[attr].name;
+    contactTitle.textContent = contact[attr].title;
+    contactLabel1.textContent = contact[attr].label1;
     contactBtn.textContent = contact[attr].button;
   });
 });
@@ -352,9 +353,8 @@ var work = {
       "Desarrollada con CSS (Bootstrap) y React Js, Pagina simple de caracter informativo, sobre un departamento de alquiler.",
     cardbody2:
       "Aplicación desarrollada con CSS y React Js, modelo para aplicar con base de datos real.",
-    cardtitle3: "Portfolio Personal",
-    cardbody3:
-      "Proyecto SPA (Single Page Aplication) desarrollado con CSS y JavaScript.",
+    cardtitle3: "Pagina Web Personal",
+    cardbody3: "Proyecto multilenguaje desarrollado con JavaScript y Css.",
     cardtitle4: "Proximamente!",
     cardbody4: "Proyecto de E-Commerce con React y Bootstrap en construccion.",
   },
@@ -366,9 +366,8 @@ var work = {
       "Developed with CSS (Bootstrap) and React Js, Simple page of informative character, about a rental apartment.",
     cardbody2:
       "Application developed with CSS and React Js, model to apply with a real database.",
-    cardtitle3: "Personal Portfolio",
-    cardbody3:
-      "SPA (Single Page Aplication) project developed with CSS and JavaScript.",
+    cardtitle3: "Personal WebPage",
+    cardbody3: "Multilanguage project developed with JavaScript and Css.",
     cardtitle4: "Coming Soon!",
     cardbody4:
       "E-Commerce project with React and Bootstrap under construction.",
@@ -376,37 +375,35 @@ var work = {
   portuguese: {
     title: "O Meu Trabalho",
     subtitle: "Uma olhada nos meus projetos",
-    cardtitle1: "Webpage de Alugel",
+    cardtitle1: "Pagina Web de Alugel",
     cardbody1:
       "Desenvolvido com CSS (Bootstrap) e React Js, página simples de caráter informativo, sobre um departamento de alugel.",
     cardbody2:
       "Aplicativo desenvolvido com CSS e React Js, modelo para aplicação com banco de dados real.",
-    cardtitle3: "Portfólio Pessoal",
-    cardbody3:
-      "Projeto SPA (Single Page Application) desenvolvido em CSS e JavaScript.",
+    cardtitle3: "Pagina Web Pessoal",
+    cardbody3: "Projeto multilíngue desenvolvido em JavaScript e Css.",
     cardtitle4: "Em Breve!",
     cardbody4: "Projeto de E-Commerce com React e Bootstrap em construção.",
   },
 };
-
 // Contacto
 var contact = {
   spanish: {
     title: "Contacto",
-    name: "Nombre Completo",
-    area: "Escrirbe tu mensaje aqui",
+    label1: "Nombre",
+    label2: "Mensaje",
     button: "Enviar",
   },
   english: {
     title: "Contact",
-    name: "Full Name",
-    area: "Escrirbe tu mensaje aqui",
+    label1: "Name",
+    label2: "Message",
     button: "Send",
   },
   portuguese: {
     title: "Contato",
-    name: "Nome Completo",
-    area: "Escrirbe tu mensaje aqui",
+    label1: "Nome",
+    label2: "Mensagem",
     button: "Enviar",
   },
 };
