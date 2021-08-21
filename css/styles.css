@@ -975,3 +975,29 @@ nav {
   padding: 0.5em;
   color: inherit;
 }
+
+/* Thanks Page */
+
+.thanks-body {
+  background-image: url(../images/thanks.jfif) cover no-repeat;
+  color: var(--clr-secondary);
+  background-blend-mode: soft-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.thanks-item {
+  position: relative;
+  margin: 1rem auto;
+}
+
+.thanks-title {
+  color: var(--clr-accent);
+}
+
+.thanks-subtitle {
+  color: var(--clr-secondary);
+}
