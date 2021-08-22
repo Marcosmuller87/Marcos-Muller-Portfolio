@@ -14,6 +14,7 @@
   --clr-primary: #e3e6da;
   --clr-secondary: #222221;
   --clr-accent: #a88f3c;
+  --clr-thanks: #5ace2d;
   --clr-bg1: #ffe2cd;
   --clr-bg2: #d5f4ff;
   --clr-bg3: #ffe0af;
@@ -28,6 +29,7 @@
     0.12em 0.12em 0.2em rgba(20, 23, 66, 0.3);
   --bxs-2: inset 0 0 1em 0 var(--clr-accent), 0 0 1em 0 var(--clr-accent);
   --txts: 0 0 0.15em hsl(0 0% 100% / 0.3), 0 0 0.15em var(--clr-accent);
+  --txts2: 0 0 0.15em hsl(0 0% 100% / 0.3), 0 0 0.15em var(--clr-thanks);
 }
 
 @media (min-width: 768px) {
@@ -979,25 +981,28 @@ nav {
 /* Thanks Page */
 
 .thanks-body {
-  background-image: url(../images/thanks.jfif) cover no-repeat;
-  color: var(--clr-secondary);
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+  background-image: url(../images/thanks.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-blend-mode: soft-light;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
 }
 
 .thanks-item {
   position: relative;
-  margin: 1rem auto;
+  margin: 3rem auto;
 }
 
 .thanks-title {
-  color: var(--clr-accent);
+  color: var(--clr-thanks);
+  text-shadow: var(--txts2);
 }
 
 .thanks-subtitle {
-  color: var(--clr-secondary);
+  margin-top: 1rem;
+  color: var(--clr-primary);
 }
