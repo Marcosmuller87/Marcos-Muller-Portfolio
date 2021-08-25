@@ -14,7 +14,8 @@ const navWork = document.querySelector(".nav-work");
 const navContact = document.querySelector(".nav-contact");
 
 // Intro
-const introTitle = document.querySelector(".section-title-text");
+const introBtn = document.querySelector(".pdf");
+const introTitle = document.querySelector(".section-text-intro");
 const introSubtitle = document.querySelector(".section-subtitle-intro");
 
 // Experiencia
@@ -90,6 +91,7 @@ linkLang.forEach((lang) => {
     navContact.textContent = nav[attr].contact;
 
     // Intro
+    introBtn.textContent = intro[attr].btn;
     introTitle.textContent = intro[attr].title;
     introSubtitle.textContent = intro[attr].subtitle;
 
@@ -180,14 +182,17 @@ var nav = {
 // Intro
 var intro = {
   spanish: {
+    btn: "Descargar CV",
     title: "Hola, soy",
     subtitle: "Desarrollador Front-End",
   },
   english: {
+    btn: "Download CV",
     title: "Hi, I'm",
     subtitle: "Front-End Developer",
   },
   portuguese: {
+    btn: "Baixar CV",
     title: "Oi, eu sou",
     subtitle: "Desenvolvedor Front-End",
   },
@@ -199,7 +204,7 @@ var experience = {
     title: "Experiencia Laboral",
     subtitle1: "Diseño Web (desde 03/2020)",
     text1:
-      "Diseños Front-End responsive utilizando las herramientas de desarrollo de HTML, CSS (Bootstrap, Sass), Javascript y React. Poca experiencia en el área de Back-End, actualmente realizando curso universitario de post-grado en Python.",
+      "Diseños Front-End responsive utilizando las herramientas de desarrollo de HTML, CSS (Bootstrap, Sass), JavaScript y React. Poca experiencia en el área de Back-End, actualmente realizando curso universitario de post-grado en Python.",
     subtitle2: "Licenciado en Kinesiología y Fisiatría (desde 11/2011)",
     text2:
       "No tiene mucho que ver con el mundo IT pero conforma gran parte de mi experiencia laboral y considero que puede ser un aporte atípico sin embargo enriquecedor al equipo de trabajo.",
@@ -209,7 +214,7 @@ var experience = {
     title: "Work Experience",
     subtitle1: "Web Design (since 03/2020)",
     text1:
-      "Responsive Front-End designs using HTML, CSS (Bootstrap, Sass), Javascript and React development tools. Little experience in the Back-End area, currently taking a postgraduate university course in Python.",
+      "Responsive Front-End designs using HTML, CSS (Bootstrap, Sass), JavaScript and React development tools. Little experience in the Back-End area, currently taking a postgraduate university course in Python.",
     subtitle2: "Degree in Physical Therapy (since 11/2011)",
     text2:
       "It doesn't have much to do with the IT world but it forms a large part of my work experience and I consider that it can be an atypical contribution, however enriching to the work team.",
@@ -219,7 +224,7 @@ var experience = {
     title: "Experiência de Trabalho",
     subtitle1: "Desenho Web (desde 03/2020)",
     text1:
-      "Projetos de Front-End responsivos utilizando ferramentas de desenvolvimento HTML, CSS (Bootstrap, Sass), Javascript e React. Pouca experiência na área de Back-End, atualmente cursando pós-graduação em Python.",
+      "Projetos de Front-End responsivos utilizando ferramentas de desenvolvimento HTML, CSS (Bootstrap, Sass), JavaScript e React. Pouca experiência na área de Back-End, atualmente cursando pós-graduação em Python.",
     subtitle2: "Licenciado em Fisioterapia (desde 11/2011)",
     text2:
       "Não tem muito a ver com o mundo da TI mas constitui uma grande parte da minha experiência de trabalho e considero que pode ser uma contribuição atípica, mas enriquecedora para a equipe de trabalho.",
