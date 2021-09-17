@@ -62,8 +62,8 @@ const workCardBody1 = document.querySelector(".rental-body");
 const workCardBody2 = document.querySelector(".fakeapi-body");
 const workCardTitle3 = document.querySelector(".portfolio-title");
 const workCardBody3 = document.querySelector(".portfolio-body");
-const workCardTitle4 = document.querySelector(".construction-title");
-const workCardBody4 = document.querySelector(".construction-body");
+const workCardTitle4 = document.querySelector(".marflix-title");
+const workCardBody4 = document.querySelector(".marflix-body");
 
 //Contacto
 const contactTitle = document.querySelector(".section-title-form");
@@ -360,8 +360,9 @@ var work = {
       "Aplicación desarrollada con CSS y React Js, modelo para aplicar con base de datos real.",
     cardtitle3: "Pagina Web Personal",
     cardbody3: "Proyecto multilenguaje desarrollado con JavaScript y Css.",
-    cardtitle4: "Proximamente!",
-    cardbody4: "Proyecto de E-Commerce con React y Bootstrap en construccion.",
+    cardtitle4: "MarFlix-Peliculas",
+    cardbody4:
+      "Sitio Web de cine desarrollado con React y Css Modules consumiendo datos de API 'The Movie Database'.",
   },
   english: {
     title: "My Work",
@@ -373,9 +374,9 @@ var work = {
       "Application developed with CSS and React Js, model to apply with a real database.",
     cardtitle3: "Personal WebPage",
     cardbody3: "Multilanguage project developed with JavaScript and Css.",
-    cardtitle4: "Coming Soon!",
+    cardtitle4: "MarFlix-Movies",
     cardbody4:
-      "E-Commerce project with React and Bootstrap under construction.",
+      "Cinema website developed with React and Css Modules consuming data from API 'The Movie Database'.",
   },
   portuguese: {
     title: "O Meu Trabalho",
@@ -387,8 +388,9 @@ var work = {
       "Aplicativo desenvolvido com CSS e React Js, modelo para aplicação com banco de dados real.",
     cardtitle3: "Pagina Web Pessoal",
     cardbody3: "Projeto multilíngue desenvolvido em JavaScript e Css.",
-    cardtitle4: "Em Breve!",
-    cardbody4: "Projeto de E-Commerce com React e Bootstrap em construção.",
+    cardtitle4: "MarFlix-Filmes",
+    cardbody4:
+      "Site de cinema desenvolvido com React e Css Modules que consomem dados da API 'The Movie Database'.",
   },
 };
 // Contacto
