@@ -308,13 +308,13 @@
     <div class="form-container">
       <form action="https://formsubmit.co/marcosmuller87@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Nuevo Email!">
-        <label class="form-label label1">Nombre</label>
-        <input type="text" name="name" class="form-input" required>
-        <label class="form-label">Email</label>
-        <input class="form-input" type="email" name="email" required>
+        <label class="form-label label1" for="name">Nombre</label>
+        <input type="text" id="name" name="name" class="form-input" required>
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email" required>
         <input type="hidden" name="_captcha" value="false">
-        <label class="form-label label2">Mensaje</label>
-        <textarea class="form-input" type="text" name="name" required></textarea>
+        <label class="form-label label2" for="message">Mensaje</label>
+        <textarea class="form-input" id="message" type="text" name="message" required></textarea>
         <button class="btn btn-form" type="submit">Enviar</button>
         <input type="hidden" name="_next" value="https://marcosmuller.netlify.app/thanks.html">
       </form>
