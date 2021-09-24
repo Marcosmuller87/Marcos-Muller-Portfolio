@@ -206,7 +206,7 @@ var experience = {
     title: "Experiencia Laboral",
     subtitle1: "Diseño Web (desde 03/2020)",
     text1:
-      "Diseños Front-End responsive utilizando las herramientas de desarrollo de HTML, CSS (Bootstrap, Sass), JavaScript y React. Poca experiencia en el área de Back-End, actualmente realizando cursos universitarios de Python en la UNSAM y Full Stack Open 2021 (React y Node) de la Universidad de Helsinki.",
+      "Diseños Front-End responsive utilizando las herramientas de desarrollo de HTML, CSS (Bootstrap, Sass), JavaScript y React. Poca experiencia en el área de Back-End, actualmente realizando cursos universitarios de Python en la UNSAM y Full Stack Open 2021 (React y Node) en la Universidad de Helsinki.",
     subtitle2: "Licenciado en Kinesiología y Fisiatría (desde 11/2011)",
     text2:
       "No tiene mucho que ver con el mundo IT pero conforma gran parte de mi experiencia laboral y considero que puede ser un aporte atípico sin embargo enriquecedor al equipo de trabajo.",
