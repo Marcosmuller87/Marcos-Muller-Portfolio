@@ -206,7 +206,7 @@ var experience = {
     title: "Experiencia Laboral",
     subtitle1: "Diseño Web (desde 03/2020)",
     text1:
-      "Diseños Front-End responsive utilizando las herramientas de desarrollo de HTML, CSS (Bootstrap, Sass), JavaScript y React. Poca experiencia en el área de Back-End, actualmente realizando curso universitario de Python en la UNSAM y Full Stack Open 2021 (React y Node) de la Universidad de Helsinki.",
+      "Diseños Front-End responsive utilizando las herramientas de desarrollo de HTML, CSS (Bootstrap, Sass), JavaScript y React. Poca experiencia en el área de Back-End, actualmente realizando cursos universitarios de Python en la UNSAM y Full Stack Open 2021 (React y Node) de la Universidad de Helsinki.",
     subtitle2: "Licenciado en Kinesiología y Fisiatría (desde 11/2011)",
     text2:
       "No tiene mucho que ver con el mundo IT pero conforma gran parte de mi experiencia laboral y considero que puede ser un aporte atípico sin embargo enriquecedor al equipo de trabajo.",
@@ -216,7 +216,7 @@ var experience = {
     title: "Work Experience",
     subtitle1: "Web Design (since 03/2020)",
     text1:
-      "Responsive Front-End designs using HTML, CSS (Bootstrap, Sass), JavaScript and React development tools. Little experience in the Back-End area, currently taking a university course in Python in UNSAM and Full Stack Open 2021 (React and Node) in the University of Helsinki.",
+      "Responsive Front-End designs using HTML, CSS (Bootstrap, Sass), JavaScript and React development tools. Little experience in the Back-End area, currently taking a university courses of Python in UNSAM and Full Stack Open 2021 (React and Node) in the University of Helsinki.",
     subtitle2: "Degree in Physical Therapy (since 11/2011)",
     text2:
       "It doesn't have much to do with the IT world but it forms a large part of my work experience and I consider that it can be an atypical contribution, however enriching to the work team.",
