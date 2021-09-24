@@ -242,7 +242,7 @@ var about = {
     text1:
       "Tengo 33 años y soy de Entre Rios, Argentina. Siempre me consideré una persona con curiosidad y motivación por aprender cosas nuevas. Si bien siempre sentí un gran interés por el mundo de la tecnología, nunca había considerado un cambio de profesión, ya que me dediqué aproximadamente 10 años a ejercer como kinesiólogo, sin embargo, llegó el año 2020. Fue un año de cambios para muchos, en mi caso perdí parte de mi trabajo, por lo cual mi tiempo libre aumentó y decidí ocupar ese tiempo estudiando algo que me guste (Programación!).",
     text2:
-      "Gracias a Dios, al apoyo de mi novia, família y de amigos que se dedican a programar (con clases privadas icluidas) y a numerosos cursos y tutoriales online (y a los programadores que los producen), lo que comenzó como un hobby se transformó en un cambio de vida radical. Actualmente me encuentro estudiando cursos universitarios de Python y Full Stack con React y Node, realizando proyectos por mi cuenta y en busqueda de nuevos desafios.",
+      "Gracias a Dios, al apoyo de mi novia, família y de amigos que se dedican a programar (con clases privadas icluidas) y a numerosos cursos y tutoriales online (y a los programadores que los producen), lo que comenzó como un hobby se transformó en un cambio de vida radical. Actualmente me encuentro cursando Python y Full Stack con React y Node, realizando proyectos por mi cuenta y en busqueda de nuevos desafios.",
     text3:
       '"Si en verdad te aprecias, estudia. Bien haras en practicar lo aprendido." (Proverbios 19:8)',
   },
@@ -252,7 +252,7 @@ var about = {
     text1:
       "I'm 33 years old and i'm from Entre Rios, Argentina. I always considered myself a person with curiosity and motivation to learn new things. Although I always felt a great interest in the tech world, I had never considered a carrer change, since I dedicated approximately 10 years to practice as a physical therapist, however, the year 2020 arrived. It was a year of changes for many, in my case I lost part of my job, so my free time increased and I decided to occupy that time studying something that I like (Programming!).",
     text2:
-      "Thanks God, the support of my girlfriend, family and friends who dedicate themselves to programming (with private classes included) and to numerous online courses and tutorials (and the programmers who produce them), what began as a hobby became a radical life change. I am currently studying a Python and a Full-Stack university courses, doing projects on my own and looking for new challenges.",
+      "Thanks God, the support of my girlfriend, family and friends who dedicate themselves to programming (with private classes included) and to numerous online courses and tutorials (and the programmers who produce them), what began as a hobby became a radical life change. I am currently studying Python and Full-Stack, doing projects on my own and looking for new challenges.",
     text3:
       '"If you really appreciate yourself, study. You will do well to practice what you have learned" (Proverbs 19:8).',
   },
@@ -262,7 +262,7 @@ var about = {
     text1:
       "Tenho 33 anos e sou de Entre Rios, Argentina. Sempre me considerei uma pessoa com curiosidade e motivação para aprender coisas novas. Embora sempre tenha sentido um grande interesse pelo mundo da tecnologia, nunca havia pensado em uma mudança de profissão, já que dediquei aproximadamente 10 anos à prática como fisioterapeuta, porém, o ano de 2020 chegou. Foi um ano de mudanças para muitos, no meu caso perdi parte do meu emprego, então o meu tempo livre aumentou e resolvi ocupar esse tempo estudando algo que gosto (Programação!).",
     text2:
-      "Graças a Deus, o apoio da minha namorada, família e amigos que se dedicam à programação (com aulas particulares incluídas) e aos inúmeros cursos e tutoriais online (e dos programadores que os produzem), o que começou como um hobby tornou-se uma mudança radical de vida. Atualmente, estou realizando cursos universitarios de Python y Full Stack con React y Node, fazendo projetos por conta própria e em busca de novos desafios.",
+      "Graças a Deus, o apoio da minha namorada, família e amigos que se dedicam à programação (com aulas particulares incluídas) e aos inúmeros cursos e tutoriais online (e dos programadores que os produzem), o que começou como um hobby tornou-se uma mudança radical de vida. Atualmente, estou cursando Python y Full Stack con React y Node, fazendo projetos por conta própria e em busca de novos desafios.",
     text3:
       ' "Se você realmente se aprecia, estude. Você fará bem em praticar o que aprendeu" (Provérbios 19:8).',
   },
