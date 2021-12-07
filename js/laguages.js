@@ -373,7 +373,7 @@ var work = {
   },
   english: {
     title: "My Work",
-    subtitle: "A look at my projects",
+    subtitle: "A glimpse at my projects",
     cardtitle1: "Rental Webpage",
     cardbody1:
       "Developed with CSS (Bootstrap) and React Js, Simple page of informative character, about a rental apartment.",
