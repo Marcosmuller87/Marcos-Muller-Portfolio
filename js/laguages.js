@@ -60,7 +60,7 @@ const workTitle = document.querySelector(".section-title-work");
 const workSubtitle = document.querySelector(".section-subtitle-work");
 const workCardTitle1 = document.querySelector(".rental-title");
 const workCardBody1 = document.querySelector(".rental-body");
-const workCardBody2 = document.querySelector(".fakeapi-body");
+const workCardBody2 = document.querySelector(".countries-body");
 const workCardTitle3 = document.querySelector(".portfolio-title");
 const workCardBody3 = document.querySelector(".portfolio-body");
 const workCardTitle4 = document.querySelector(".marflix-title");
@@ -364,7 +364,7 @@ var work = {
     cardbody1:
       "Desarrollada con CSS (Bootstrap) y React Js, Pagina simple de caracter informativo, sobre un departamento de alquiler.",
     cardbody2:
-      "Aplicación desarrollada con CSS y React Js, modelo para aplicar con base de datos real.",
+      "Aplicación responsive desarrollada con Bootstrap y React Js, consumiendo datos de APIs REST Countries y OpenWeather.",
     cardtitle3: "Pagina Web Personal",
     cardbody3: "Proyecto multilenguaje desarrollado con JavaScript y Css.",
     cardtitle4: "MarFlix-Peliculas",
@@ -378,7 +378,7 @@ var work = {
     cardbody1:
       "Developed with CSS (Bootstrap) and React Js, Simple page of informative character, about a rental apartment.",
     cardbody2:
-      "Application developed with CSS and React Js, model to apply with a real database.",
+      "Responsive App developed with Bootstrap and React Js, consuming data from APIs REST Countries and OpenWeather.",
     cardtitle3: "Personal WebPage",
     cardbody3: "Multilanguage project developed with JavaScript and Css.",
     cardtitle4: "MarFlix-Movies",
@@ -392,7 +392,7 @@ var work = {
     cardbody1:
       "Desenvolvido com CSS (Bootstrap) e React Js, página simples de caráter informativo, sobre um departamento de alugel.",
     cardbody2:
-      "Aplicativo desenvolvido com CSS e React Js, modelo para aplicação com banco de dados real.",
+      "Aplicativo responsivo desenvolvido com Bootstrap e React Js, consumindo dados de APIs REST Countries e OpenWeather.",
     cardtitle3: "Pagina Web Pessoal",
     cardbody3: "Projeto multilíngue desenvolvido em JavaScript e Css.",
     cardtitle4: "MarFlix-Filmes",
