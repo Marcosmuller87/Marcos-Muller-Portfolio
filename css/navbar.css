@@ -1,0 +1,165 @@
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  background-image: url(../images/navbar.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: var(--clr-secondary);
+}
+
+.logo {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+/* Navbar - Idiomas */
+.lang-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 4em;
+}
+
+.lang-link {
+  display: block;
+  margin-right: 12px;
+  outline: none;
+}
+
+.lang-link.active {
+  padding: 2px;
+  border: 4px solid var(--clr-primary);
+  border-radius: 50% 50%;
+}
+
+.flag {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.flag:hover {
+  transform: scale(1.17);
+  transition: all 0.5s ease-in;
+}
+
+@media (min-width: 768px) {
+  .flag {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .lang-link {
+    margin-right: 20px;
+  }
+}
+
+/* Navbar */
+
+nav {
+  position: fixed;
+  background-image: url(../images/navbar.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 200ms ease-in-out;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--clr-accent);
+}
+
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+  z-index: 1000;
+  outline: none;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  color: var(--clr-accent);
+}
+
+.nav-open .hamb {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamb::before {
+  transform: rotate(90deg) translateX(-10px);
+}
+
+.nav-open .hamb::after {
+  opacity: 0;
+}
+
+.hamb {
+  display: block;
+  position: relative;
+  top: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .hamb {
+    top: -0.1em;
+  }
+}
+
+.hamb,
+.hamb::before,
+.hamb::after {
+  background: var(--clr-accent);
+  width: 2em;
+  height: 6px;
+  border-radius: 1em;
+  transition: transform 200ms ease-in-out;
+}
+
+.hamb::before,
+.hamb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamb::before {
+  top: 10px;
+}
+.hamb::after {
+  bottom: 10px;
+}

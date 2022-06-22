@@ -1,0 +1,52 @@
+.experience {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  background-image: url(../images/laptop.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  text-align: center;
+  position: relative;
+  padding-top: 0;
+}
+
+.section-title-experience {
+  color: var(--clr-accent);
+  position: relative;
+  padding-top: 3rem;
+}
+
+.section-title-experience::after {
+  content: "";
+  background: currentColor;
+  display: block;
+  width: 23%;
+  height: 3px;
+  margin: 0.4em auto 1em;
+  opacity: 0.5;
+}
+
+.experience-wrapper {
+  margin-bottom: 4em;
+}
+
+.experience-body {
+  max-width: 500px;
+  margin: 0 auto 3.5em;
+}
+
+.experience-title {
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 900px) {
+  .experience-wrapper {
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .experience + .experience {
+    margin-left: 2em;
+  }
+}

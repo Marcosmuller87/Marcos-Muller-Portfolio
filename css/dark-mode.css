@@ -1,0 +1,25 @@
+/* Dark Mode */
+
+.dark-mode {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.dark-mode:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.dark-logo {
+  margin-top: 20px;
+  margin-left: 10px;
+  max-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .dark-logo {
+    max-height: 50px;
+  }
+}

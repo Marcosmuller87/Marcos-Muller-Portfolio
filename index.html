@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcos Müller - Developer</title>
+
+    <link rel="shortcut icon" href="favicon-32x32.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div>
+        <img src="images/mmuller-logo.png" alt="Logo" class="logo" />
+      </div>
+      <!-- Idiomas -->
+      <div class="lang-container">
+        <a href="#" language="spanish" class="lang-link active"
+          ><img src="images/espana.png" class="flag" alt="flag"
+        /></a>
+        <a href="#" language="english" class="lang-link"
+          ><img src="images/reino-unido.png" class="flag" alt="flag"
+        /></a>
+        <a href="#" language="portuguese" class="lang-link"
+          ><img src="images/portugal.png" class="flag" alt="flag"
+        /></a>
+      </div>
+      <!-- Hamburguesa -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamb"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link nav-home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link nav-exp">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link nav-about">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link nav-skills">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link nav-work">Mi trabajo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link nav-contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <div class="dark-mode">
+      <img class="dark-logo" src="images/moon.png" alt="moon" id="darklogo" />
+    </div>
+    <a
+      href="Marcos-Muller-CV.pdf"
+      download="Marcos-Muller-CV.pdf"
+      class="btn pdf"
+      >Descargar CV</a
+    >
+    <section class="intro" id="intro">
+      <h1 class="section-title section-title-intro">
+        <p class="section-text-intro">Hola, soy</p>
+        <strong>Marcos Müller</strong>
+      </h1>
+      <p class="section-subtitle section-subtitle-intro">
+        Desarrollador Front-End
+      </p>
+      <img
+        src="images/mmuller-profile.JPG"
+        alt="profile-img"
+        class="intro-img"
+      />
+    </section>
+    <!-- Experiencia -->
+    <section class="experience" id="experience">
+      <h1 class="section-title section-title-experience">
+        Experiencia laboral
+      </h1>
+      <div class="experience-wrapper">
+        <div class="experience-body">
+          <h2 class="experience-sub1">Diseño Web (desde 03/2020)</h2>
+          <p class="experience-text1">
+            Diseños Front-End responsive utilizando las herramientas de
+            desarrollo de HTML, CSS (Bootstrap, Sass), JavaScript y React.
+            Actualmente cursando la carrera de Ingenieria de Software en la
+            Universidad Cruzeiro do Sul y Full Stack Open 2021 (React y Node)
+            patrocinado por la Universidad de Helsinki.
+          </p>
+        </div>
+        <div class="experience-body">
+          <h2 class="experience-sub2">
+            Lic. en Kinesiología y Fisiatría (desde 11/2011)
+          </h2>
+          <p class="experience-text2">
+            No tiene mucho que ver con el mundo IT pero conforma gran parte de
+            mi experiencia laboral y considero que puede ser un aporte atípico
+            sin embargo enriquecedor al equipo de trabajo.
+          </p>
+        </div>
+      </div>
+      <a href="#work" class="btn experience-btn">Mi trabajo</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about" id="about">
+      <h1 class="section-title section-title-about">Sobre mi</h1>
+      <h3 class="section-subtitle section-subtitle-about">
+        Desarrollador y Kinesiólogo
+      </h3>
+      <div class="about-body">
+        <p class="about-text1">
+          Soy del interior de la provincia de Entre Ríos, Argentina, actualmente
+          viviendo en Guarapari (ES, Brasil). Siempre me consideré una persona
+          con curiosidad y motivación por aprender cosas nuevas. Si bien siempre
+          sentí un gran interés por el mundo de la tecnología, nunca había
+          considerado un cambio de profesión, ya que me dediqué aproximadamente
+          10 años a ejercer como kinesiólogo, sin embargo, llegó el año 2020.
+          Fue un año de cambios para muchos, en mi caso debido a la pandemia mi
+          tiempo libre aumentó y decidí ocupar ese tiempo estudiando algo que me
+          guste (Programación!).
+        </p>
+        <p class="about-text2">
+          Gracias a Dios, al apoyo de mi novia, familia y de amigos que se
+          dedican a programar (con clases privadas icluidas), a numerosos cursos
+          y tutoriales online (y a los programadores que los producen), lo que
+          comenzó como un hobby se transformó en un cambio de vida radical.
+          Actualmente me encuentro estudiando la carrera de Ingeniería de
+          Software en la Universidad Cruzeiro do Sul y el curso Full-Stack Open
+          2021 patrocinado por la Universidad de Helsinki, realizando proyectos
+          Front-End y en busqueda de nuevos desafíos.
+        </p>
+        <p class="about-text3">
+          "Si en verdad te aprecias, estudia. Bien haras en practicar lo
+          aprendido."(Proverbios 19:8)
+        </p>
+      </div>
+      <img class="about-img" src="images/coding.jpeg" alt="marcos-picture" />
+    </section>
+
+    <!-- My Skills -->
+    <section class="skills">
+      <h1 class="section-title section-title-skills" id="skills">
+        Mis habilidades
+      </h1>
+      <!-- Idiomas -->
+      <div class="skills-body">
+        <div class="skills-item">
+          <div class="skills-content">
+            <i class="fas fa-language fa-2x skills-fa"></i>
+            <h3 class="time-subtitle1">Idiomas</h3>
+            <p class="skills-text lang-1">Español - Idioma Nativo.</p>
+            <p class="skills-text lang-2">
+              Inglés - Nivel Intermedio-Avanzado.
+            </p>
+            <p class="skills-text lang-3">
+              Portugués - Nivel Intermedio-Avanzado.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Destacados -->
+      <div class="skills-body">
+        <div class="skills-item">
+          <div class="skills-content">
+            <i class="fas fa-star fa-2x skills-fa"></i>
+            <h3 class="skills-subtitle time-subtitle2">Destacados</h3>
+            <p class="skills-text outs-1">
+              "Carrera de Grado de Ingenieria en Software". (Actualmente
+              cursando). UNICSUL (Universidade Cruzeiro do Sul, Polo Vila
+              Velha).
+            </p>
+            <p class="skills-text outs-2">
+              "Conviertete en Desarrollador Web Full-Stack". Itinerario de
+              Aprendizaje. (LinkedIn Learning)
+            </p>
+            <p class="skills-text outs-3">
+              "Full Stack Open 2021". (Actualmente cursando). Universidad de
+              Helsinki.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- HTML -->
+      <div class="skills-body">
+        <div class="skills-item">
+          <div class="skills-content">
+            <i class="fab fa-html5 fa-2x skills-fa"></i>
+            <h3 class="skills-subtitle">HTML</h3>
+            <p class="skills-text html">
+              "Desarrollo web. HTML desde cero. Edición 2020". (Udemy)
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- CSS -->
+      <div class="skills-body">
+        <div class="skills-item">
+          <div class="skills-content">
+            <i class="fab fa-css3-alt fa-2x skills-fa"></i>
+            <h3 class="skills-subtitle">CSS</h3>
+            <p class="skills-text css-1">
+              "Desarrollo Web. CSS desde cero. Edicion 2020". (Udemy)
+            </p>
+            <p class="skills-text css-2">
+              "Aprende Bootstrap - Para Principiantes". (Udemy)
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- JavaScript -->
+      <div class="skills-body">
+        <div class="skills-item">
+          <div class="skills-content">
+            <i class="fab fa-js-square fa-2x skills-fa"></i>
+            <h3 class="skills-subtitle">JavaScript</h3>
+            <p class="skills-text js-1">
+              "Desarrollo Web. JavaScript desde cero. Edicion 2020". (Udemy)
+            </p>
+            <p class="skills-text js-2">
+              "JavaScript Moderno para React Js - ES6". (Udemy)
+            </p>
+            <p class="skills-text js-3">
+              "Aprende JavaScript y Jquery de 0 a 100". (Udemy)
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- React -->
+      <div class="skills-body">
+        <div class="skills-item">
+          <div class="skills-content">
+            <i class="fab fa-react fa-2x skills-fa"></i>
+            <h3 class="skills-subtitle">React</h3>
+            <p class="skills-text react-1">
+              "React JS- Guia completa para el Desarrollo Web Frontend [2021]".
+              (Udemy)
+            </p>
+            <p class="skills-text react-2">
+              "React - La Guia Completa con React Hook Redux 2021 en 4hr".
+              (Udemy)
+            </p>
+            <p class="skills-text react-3">
+              "Curso Completo de ReactJs - Basico a Avanzado (2021)". (Udemy)
+            </p>
+            <p class="skills-text react-4">
+              "React para principiantes: Consturye un juego mientras aprendes
+              React". (Udemy)
+            </p>
+            <p class="skills-text react-5">
+              "Aprende React + Firebase | 2021". (Udemy)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mi trabajo -->
+    <h1 class="section-title section-title-work" id="work">Mi trabajo</h1>
+    <h2 class="section subtitle section-subtitle-work">
+      Un vistazo a mis proyectos
+    </h2>
+    <section class="work">
+      <!-- Apartamento -->
+      <div class="card middle">
+        <div class="card-front">
+          <img src="./images/apartament.jpg" alt="apartament-img" />
+        </div>
+        <div class="card-back">
+          <div class="back-content middle">
+            <h3 class="card-title rental-title">Webpage de Alquiler</h3>
+            <p class="card-body rental-body">
+              Desarrollada con CSS (Bootstrap) y React Js, Pagina simple de
+              caracter informativo, sobre un departamento de alquiler.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/Marcosmuller87/Website-Rental-Apt"
+                target="_blank"
+                class="btn"
+                >Github</a
+              >
+              <a
+                href="https://apartamentodasoli.netlify.app/"
+                target="_blank"
+                class="btn"
+                >Webpage</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fake Api List -->
+      <div class="card middle">
+        <div class="card-front">
+          <img src="./images/countrydata.png" alt="Countries App" />
+        </div>
+        <div class="card-back">
+          <div class="back-content middle">
+            <h3 class="card-title">Country Data App</h3>
+            <p class="card-body countries-body">
+              Aplicación responsive desarrollada con Bootstrap y React Js,
+              consumiendo datos de APIs REST Countries y OpenWeather.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/Marcosmuller87/Countries"
+                target="_blank"
+                class="btn card-btn"
+              >
+                Github
+              </a>
+              <a
+                href="https://mm-countries.netlify.app/"
+                target="_blank"
+                class="btn card-btn"
+                >Webpage</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio -->
+      <div class="card middle">
+        <div class="card-front">
+          <img src="./images/portfolio.jpg" alt="portfolio-img" />
+        </div>
+        <div class="card-back">
+          <div class="back-content middle">
+            <h3 class="card-title portfolio-title">Pagina Web Personal</h3>
+            <p class="card-body portfolio-body">
+              Proyecto multilenguajes desarrollado con JavaScript y Css.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/Marcosmuller87/Fake-Api-List"
+                target="_blank"
+                class="btn card-btn"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MarFlix -->
+      <div class="card middle">
+        <div class="card-front">
+          <img src="./images/marflix.jpg" alt="marflix-movies" />
+        </div>
+        <div class="card-back">
+          <div class="back-content middle">
+            <h3 class="card-title marflix-title">MarFlix - Peliculas</h3>
+            <p class="card-body marflix-body">
+              Sitio Web de cine desarrollado con React y Css Modules consumiendo
+              datos de API 'The Movie Database'.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/Marcosmuller87/MarFlix"
+                target="_blank"
+                class="btn"
+                >Github</a
+              >
+              <a href="https://marflix.netlify.app/" target="_blank" class="btn"
+                >Webpage</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section" id="contact">
+      <h1 class="section-title section-title-form">Contacto</h1>
+      <div class="form-container">
+        <form
+          action="https://formsubmit.co/marcosmuller87@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Nuevo Email!" />
+          <label class="form-label label1" for="name">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+          />
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <label class="form-label label2" for="message">Mensaje</label>
+          <textarea
+            class="form-input"
+            id="message"
+            type="text"
+            name="message"
+            required
+          ></textarea>
+          <button class="btn btn-form" type="submit">Enviar</button>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://marcosmuller.netlify.app/thanks.html"
+          />
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="social-media">
+        <li class="social-media-item">
+          <a
+            class="social-media-link"
+            href="https://github.com/Marcosmuller87"
+            target="_blank"
+          >
+            <i class="fab fa-github fa-2x"></i
+          ></a>
+        </li>
+        <li class="social-media-item">
+          <a
+            class="social-media-link"
+            href="www.linkedin.com/in/marcosjoelmuller"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </li>
+        <li class="social-media-item">
+          <a
+            class="social-media-link"
+            href="https://www.facebook.com/marcos.muller.906/"
+            target="_blank"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+        </li>
+        <li class="social-media-item">
+          <a
+            class="social-media-link"
+            href="https://www.instagram.com/marcosmuller87/?hl=es"
+            target="_blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/laguages.js"></script>
+    <script src="js/darktheme.js"></script>
+  </body>
+</html>

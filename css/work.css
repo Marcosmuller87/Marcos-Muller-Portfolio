@@ -1,0 +1,131 @@
+.work {
+  color: var(--clr-accent);
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: minmax(200px, 1fr);
+}
+
+.section-title-work {
+  color: var(--clr-accent);
+  position: relative;
+  text-align: center;
+}
+
+.section-title-work::after {
+  content: "";
+  background: currentColor;
+  display: block;
+  width: 15%;
+  height: 3px;
+  margin: 0.4em auto 1em;
+  opacity: 0.5;
+}
+
+.section-subtitle-work {
+  color: var(--clr-secondary);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.middle {
+  position: relative;
+  place-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  height: 365px;
+  width: 322px;
+}
+
+.card:hover > .card-front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:focus > .card-front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .card-back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card:focus > .card-back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+  box-shadow: var(--bxs);
+}
+
+.card-front img {
+  height: 100%;
+}
+
+.card-front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card-back {
+  background: var(--clr-secondary);
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content {
+  color: var(--clr-accent);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.card-title,
+.card-body {
+  justify-self: center;
+  align-self: center;
+}
+
+.card-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-links a {
+  font-size: 0.7rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: var(--clr-accent);
+  transition: 400ms;
+  outline: none;
+}
+
+.card-links a:hover {
+  color: var(--clr-primary);
+  background: var(--clr-accent);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 465px;
+    width: 412px;
+  }
+  .card-links a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .work {
+    grid-template-columns: 1fr 1fr;
+  }
+}

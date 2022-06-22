@@ -1,0 +1,31 @@
+.footer {
+  background-image: url(../images/navbar.jpg);
+  background-color: var(--clr-secondary);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 1em 0;
+}
+
+.social-media-link:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease-in;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 0;
+  padding: 0;
+}
+
+.social-media-item {
+  margin: 0 0.5em;
+}
+
+.social-media-link {
+  padding: 0.5em;
+  color: inherit;
+}

@@ -1,0 +1,26 @@
+.thanks-body {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+  background-image: url(../images/thanks.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.thanks-item {
+  position: relative;
+  margin: 3rem auto;
+}
+
+.thanks-title {
+  color: var(--clr-thanks);
+  text-shadow: var(--txts2);
+}
+
+.thanks-subtitle {
+  margin-top: 1rem;
+  color: var(--clr-primary);
+}

@@ -1,0 +1,144 @@
+.section-title-skills {
+  color: var(--clr-accent);
+  position: relative;
+  text-align: center;
+}
+
+.section-title-skills::after {
+  content: "";
+  background: currentColor;
+  display: block;
+  width: 23%;
+  height: 3px;
+  margin: 0.4em auto 1em;
+  opacity: 0.5;
+  text-shadow: var(--txts);
+  box-shadow: var(--bxs-2);
+}
+
+.skills-body {
+  position: relative;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 0 7px 7px 0;
+  padding: 4px 0;
+}
+
+.skills-body::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: var(--clr-accent);
+  position: absolute;
+  left: 34px;
+  top: 0;
+  text-shadow: 0 0 0.15em hsl(0 0% 100% / 0.3), 0 0 0.15em currentColor;
+  box-shadow: inset 0 0 1em 0 var(--clr-accent), 0 0 1em 0 var(--clr-accent);
+}
+
+.skills-content {
+  padding-right: 1em;
+  margin-bottom: 80px;
+  color: var(--clr-secondary);
+}
+
+.skills-item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.skills-item::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--clr-accent);
+  border-radius: 50%;
+  position: absolute;
+  background: inherit;
+  left: -12px;
+  top: 0px;
+  z-index: 9;
+  text-shadow: 0 0 0.15em hsl(0 0% 100% / 0.3), 0 0 0.15em currentColor;
+  box-shadow: inset 0 0 1em 0 var(--clr-accent), 0 0 1em 0 var(--clr-accent);
+}
+
+.skills-item:hover::after {
+  border: 4px solid inherit;
+  background: var(--clr-secondary);
+  transition: all 0.5s ease-in;
+}
+
+.skills-text {
+  line-height: 1.5;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.skills-fa {
+  position: absolute;
+  left: 1px;
+  top: 11px;
+  z-index: 10;
+  color: var(--clr-accent);
+}
+
+.skills-fa:hover {
+  color: var(--clr-accent);
+}
+
+.fa-star {
+  top: 8px;
+  left: -5px;
+}
+
+.fa-react {
+  top: 9px;
+  left: -4px;
+}
+
+.fa-js-square {
+  top: 10px;
+  left: -2px;
+}
+
+.fa-language {
+  font-size: 30px;
+  left: -6px;
+}
+
+@media (min-width: 768px) {
+  .skills-body {
+    margin-left: 3em;
+  }
+
+  .skills-item::after {
+    width: 80px;
+    height: 80px;
+    left: -43px;
+  }
+  .skills-fa {
+    left: -22px;
+    top: 15px;
+    font-size: 55px;
+  }
+
+  .fa-language {
+    font-size: 50px;
+    left: -33px;
+  }
+
+  .fa-js-square {
+    left: -26px;
+    top: 13px;
+  }
+
+  .fa-react {
+    top: 13px;
+    left: -30px;
+  }
+
+  .fa-star {
+    top: 11px;
+    left: -34px;
+  }
+}
